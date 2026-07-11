@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exército Brasileiro do RD0905 - Oficial</title>
+    <style>
+        /* --- ESTILOS GERAIS --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8; /* Fundo cinza-azulado muito claro */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* --- CABEÇALHO --- */
+        header {
+            background-color: #2c3e50; /* Azul-escuro militar */
+            color: white;
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .perfil-container {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 50%;
+            border: 5px solid #27ae60; /* Verde militar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .perfil-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            opacity: 0.8;
+            font-size: 1.2em;
+        }
+
+        /* --- SEÇÃO PRINCIPAL (JOGO) --- */
+        #jogo {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .btn-militar {
+            display: inline-block;
+            background-color: #27ae60; /* Verde militar principal */
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 8px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .btn-militar:hover {
+            background-color: #2ecc71; /* Verde mais claro no hover */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        /* --- SEÇÃO DE LOJA (GAMEPASSES) --- */
+        #loja {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        #loja h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            text-transform: uppercase;
+        }
+
+        #loja p.loja-aviso {
+            margin-top: 0;
+            margin-bottom: 40px;
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        .gamepass-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .gamepass-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .gamepass-card:hover {
+            transform: scale(1.03);
+        }
+
+        .gamepass-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .gamepass-info h3 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .price-container {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .btn-comprar {
+            display: block;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 12px 0;
+            font-weight: bold;
+            border-radius: 6px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+        .btn-comprar:hover {
+            background-color: #34495e;
+        }
+
+        /* --- FOOTER (RODAPÉ) --- */
+        footer {
+            margin-top: auto;
+            width: 100%;
+            background-color: #2c3e50;
+            color: #7f8c8d;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* --- RESPONSIVIDADE (PARA CELULAR) --- */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8em; }
+            .perfil-container { width: 100px; height: 100px; }
+            .btn-militar { padding: 12px 30px; font-size: 1.2em; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- LEMBRE-SE DE SUBIR O ARQUIVO 'perfil.png' PARA O GITHUB -->
+        <div class="perfil-container">
+            <img src="perfil.png" alt="Foto do Comandante RD0905 no Roblox">
+        </div>
+        <h1>Exército Brasileiro do RD0905</h1>
+        <p>Servindo com Honra no Roblox</p>
+    </header>
+
+    <main>
+        <section id="jogo">
+            <h2>Pronto para Servir?</h2>
+            <a href="https://www.roblox.com/pt/games/89211015567669/Ex-rcito-Brasileiro-do-RD0905" target="_blank" class="btn-militar">
+                ENTRAR NO JOGO
+            </a>
+        </section>
+
+        <section id="loja">
+            <h2>QG de Vantagens (Gamepasses)</h2>
+            <p class="loja-aviso">⚠️ Clique em comprar para ser redirecionado à página do Roblox.</p>
+            
+            <div class="gamepass-container">
+
+                <!-- RADIO GAMEPASS -->
+                <article class="gamepass-card">
+                    <div class="gamepass-info">
+                        <h3>Rádio</h3>
+                        <div class="price-container">
+                            <span class="price-value">40 Robux</span>
+                        </div>
+                        <a href="https://www.roblox.com/pt/game-pass/1815544008/R-dio" target="_blank" class="btn-comprar">
+                            Comprar no Roblox
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CÃO GAMEPASS (RENOMEADO DO ORIGINAL 'Dog') -->
+                <article class="gamepass-card">
+                    <div class="gamepass-info">
+                        <h3>Cão</h3>
+                        <div class="price-container">
+                            <span class="price-value">30 Robux</span>
+                        </div>
+                        <a href="https://www.roblox.com/pt/game-pass/1899991195/Dog" target="_blank" class="btn-comprar">
+                            Comprar no Roblox
+                        </a>
+                    </div>
+                </article>
+
+                <!-- VIP GAMEPASS -->
+                <article class="gamepass-card">
+                    <div class="gamepass-info">
+                        <h3>Vip</h3>
+                        <div class="price-container">
+                            <span class="price-value">12 Robux</span>
+                        </div>
+                        <a href="https://www.roblox.com/pt/game-pass/1600019809/VIP" target="_blank" class="btn-comprar">
+                            Comprar no Roblox
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exército Brasileiro do RD0905. Todos os direitos reservados. Não afiliado oficialmente com o Roblox Corp.</p>
+        <p>Página criada pelo Comandante RD0905</p>
+    </footer>
+
+</body>
+</html>
